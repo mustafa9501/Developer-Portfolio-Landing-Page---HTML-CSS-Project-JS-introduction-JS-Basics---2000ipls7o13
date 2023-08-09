@@ -6,21 +6,26 @@
 }
 
 .hero-section{
-    position: relative;
+    /* position: relative; */
     display: inline-block;
+    width: 100%;
+}
+
+.hero-section img{
+    width: 100%;
 }
 
 .text-hero{
     position: absolute;
     color: white;
-    padding-top: 160px;  
+    padding-top: 127px;  
     padding-left: 28%;
 }
 
 .text-hero .text-h2{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 57px;    
+    font-size: 50px;    
 }
 
 .extra{
@@ -83,22 +88,25 @@
   
  .bottom-section{
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
  }
 
  .bottom-section .bottom1{
-    width: 500px;
-    height: 150px;
+    width: 100%;
+    height: 170px;
     background-color: rgba(83, 131, 29, 0.856);
     color: white;
+    margin: 10px;
  }
 
  .bottom-section .bottom2{
-    width: 500px;
-    height: 150px;
+    width: 100%;
+    height: 170px;
     background-color: rgb(78, 23, 10);
     color: white;
+    margin: 10px;
  }
 
  .bottom-section .bottem-text{
@@ -108,4 +116,32 @@
 
  .bottem-p{
     padding-left: 30px;
+ }
+
+ @media screen and (max-width: 786px){
+    .hero-section{
+        min-height: 50vh;
+    }
+    .hero-section img{
+        min-height: 50vh;
+    }
+    .text-hero{
+        padding-top: 20px;
+    }
+    .text-hero .text-h2 {
+        font-size: 18px;
+        text-align: center;          
+    }
+    .extra{
+        font-size: 10px;
+    }
+
+    .black-box .text-b, .extra-1{
+        font-size: 24px;
+    }
+    .bottom-section{
+        flex-direction: column;
+        margin: 0;
+        display: block;
+    }
  }
