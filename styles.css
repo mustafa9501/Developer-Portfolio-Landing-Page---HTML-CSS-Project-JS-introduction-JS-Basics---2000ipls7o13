@@ -1,33 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,400&family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *{
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'lato';
-}
+
 .hero-section{
     position: relative;
     display: inline-block;
 }
 
-img{
-   height: 700px; 
-   width: 100vw;
-}
-
 .text-hero{
     position: absolute;
     color: white;
-    padding-top: 120px;  
-    padding-left: 40%;
-    
+    padding-top: 160px;  
+    padding-left: 28%;
 }
-h1, h2{
-    font-family: 'Lato';
+
+.text-hero .text-h2{
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
-    
+    font-size: 57px;    
 }
 
 .extra{
@@ -38,19 +31,81 @@ h1, h2{
 .black-box{
     background-color: #000;
     width: 100%;
-    height: 100px; 
-    margin-top: 8px;
-    padding-bottom: 20px;
+    /* height: 113px;  */
+    margin-top: 10px;
 }
 
-h3{
+.black-box h3{
     color: white;
     font-size : 80px;
     font-weight: 400;
     text-align: center;
-    
 }
 
-span{
+.extra-1{
     font-size:96px;
+    color: white;
 }
+
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    max-width: 340px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h3, p{
+    padding: 10px;
+  }
+  
+ .bottom-section{
+    display: flex;
+    justify-content: space-around;
+    
+ }
+
+ .bottom-section .bottom1{
+    width: 500px;
+    height: 150px;
+    background-color: rgba(83, 131, 29, 0.856);
+    color: white;
+ }
+
+ .bottom-section .bottom2{
+    width: 500px;
+    height: 150px;
+    background-color: rgb(78, 23, 10);
+    color: white;
+ }
+
+ .bottom-section .bottem-text{
+    padding: 30px 0 0 30px;
+    font-size: 50px;
+ }
+
+ .bottem-p{
+    padding-left: 30px;
+ }
