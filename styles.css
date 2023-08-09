@@ -1,1 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,400&family=Poppins:wght@300;700&display=swap');
 
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'lato';
+}
+.hero-section{
+    position: relative;
+    display: inline-block;
+}
+
+img{
+   height: 700px; 
+   width: 100vw;
+}
+
+.text-hero{
+    position: absolute;
+    color: white;
+    padding-top: 120px;  
+    padding-left: 40%;
+    
+}
+h1, h2{
+    font-family: 'Lato';
+    font-weight: 400;
+    
+}
+
+.extra{
+    font-size: small;
+}
+
+
+.black-box{
+    background-color: #000;
+    width: 100%;
+    height: 100px; 
+    margin-top: 8px;
+    padding-bottom: 20px;
+}
+
+h3{
+    color: white;
+    font-size : 80px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+span{
+    font-size:96px;
+}
